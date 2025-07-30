@@ -26,16 +26,16 @@ const FloatingOrderButton = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 animate-fade-in">
-      <Button 
-        variant="magnolia" 
-        size="lg" 
-        className="rounded-full shadow-elegant hover:shadow-lg px-6 py-3 text-base font-semibold"
-        onClick={handleOrder}
-      >
-        <MessageCircle className="h-5 w-5 mr-2" />
-        Order via WhatsApp
-      </Button>
-    </div>
+  <Button 
+    size="lg" 
+    className="bg-green-600 hover:bg-green-700 text-white rounded-full shadow-elegant hover:shadow-lg px-6 py-3 text-base font-semibold"
+    onClick={handleOrder}
+  >
+    <MessageCircle className="h-5 w-5 mr-2" />
+    Order via WhatsApp
+  </Button>
+</div>
+
   );
 };
 

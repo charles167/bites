@@ -36,7 +36,7 @@
     --magnolia-cream: 48 100% 94%;
     --magnolia-text: 120 35% 20%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(48 100% 94%), hsl(50 100% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(48 100% 94%), hsl(51, 13%, 80%));
     --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(48 100% 94%));
 
     --shadow-elegant: 0 4px 25px -8px hsl(120 39% 35% / 0.15);
