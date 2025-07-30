@@ -1,12 +1,3 @@
-/* Global body styling */
-body {
-  background-color: #fffdd0; /* Cream background */
-  color: #006400; /* Dark green text by default */
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Root container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -14,7 +5,6 @@ body {
   text-align: center;
 }
 
-/* Logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -22,13 +12,12 @@ body {
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #64dd17); /* Yellow-green glow */
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #ffee58); /* Bright yellow glow */
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Logo spin animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,24 +27,16 @@ body {
   }
 }
 
-/* Motion preference */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-/* Card component styling */
 .card {
   padding: 2em;
-  background-color: #fefefe;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 100, 0, 0.1);
-  color: #c4bd94; /* Yellow text inside cards */
 }
 
-/* Docs link */
 .read-the-docs {
-  color: #008000; /* Green */
-  font-style: italic;
+  color: #888;
 }
