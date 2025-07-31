@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/uploads/room.png" 
+                src="https://res.cloudinary.com/dspkz3qiq/image/upload/v1754003544/WhatsApp_Image_2025-07-29_at_13.44.12_17ad21a6-Photoroom_wgvmls.png" 
                 alt="Reign Bites Logo" 
                 className="h-12 w-auto brightness-0 invert"
               />
