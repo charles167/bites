@@ -26,36 +26,10 @@ const slides = [
     description:
       "Crispy outside, fluffy inside — served with syrup and love.",
   },
-  {
-    image: "/Pictures/delicious-donuts-ai-generated.png",
-    title: "Blueberry Muffins",
-    description:
-      "Bursting with blueberries, these muffins are a sweet pick-me-up.",
-  },
-  {
-    image: "/Pictures/closeup-yummy-chocolate-cookies-against-white-table.png",
-    title: "Freshly Brewed Coffee",
-    description:
-      "Rich aroma, smooth finish — start your morning the right way.",
-  },
-  {
-    image: "/Pictures/Brown 3D Illustration Rice Box Packaging Mockup Instagram Post.png",
-    title: "Glazed Doughnuts",
-    description:
-      "Light, sweet, and irresistibly soft. A timeless favorite.",
-  },
-  {
-    image: "/Pictures/55001980_10657902.jpg",
-    title: "Garden Fresh Salad",
-    description:
-      "A vibrant mix of greens and goodness for a healthy bite.",
-  },
-  {
-    image: "/Pictures/23636885_m021t006_paper_food_box_mockup_02.png",
-    title: "Signature Gourmet Burger",
-    description:
-      "Grilled to perfection with premium ingredients. A bold bite.",
-  },
+ 
+  
+
+
 ];
 
 const Hero = () => {
