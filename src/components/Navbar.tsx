@@ -30,7 +30,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/a2b17f30-234c-4381-9d58-c69114d65ac7.png" 
+              src="/uploads/room.png" 
               alt="Reign Bites Logo" 
               className="h-12 w-auto"
             />
