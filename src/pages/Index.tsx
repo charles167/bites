@@ -17,7 +17,7 @@ const Index = () => {
 
       <MenuPreviewSlider />
 
-      <CateringSection/>
+   
       
       <div id="menu" className="space-y-0">
         <ProductSection
@@ -55,6 +55,8 @@ const Index = () => {
           products={productsData.sauces}
         />
       </div>
+
+         <CateringSection/>
       
       <FloatingOrderButton />
       <Footer />

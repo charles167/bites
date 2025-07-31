@@ -8,11 +8,10 @@ import { useRef } from "react";
 const menuItems = [
   { title: "Chicken Sandwich", image: "/Pictures/chicken sandwich - Copy.jpg" },
  { title: "Chicken Skewers ", image: "/Pictures/Chicken Skewers - Copy.jpg" },
-//   { title: "Puff-puff", image: "/Pictures/puff-puff - Copy.jpg" },
+
   { title: "Reign Bread", image: "/Pictures/Reign bread - Copy.jpg" },
   { title: "Spiced Kuli Kuli", image: "/Pictures/Spiced Kuli kuli - Copy.jpg" },
-//   { title: "Fruit Cake", image: "/Pictures/fruit cake - Copy.jpg" },
-//   { title: "Roasted Groundnut", image: "/Pictures/Roasted Groundnut - Copy.jpg" },
+
   { title: "Naija Buns", image: "/Pictures/Naija Buns - Copy.jpg" },
 ];
 
@@ -23,7 +22,8 @@ const MenuPreviewSlider = () => {
   return (
     <section className="py-12 bg-muted relative">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-magnolia-purple">
+        <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-12 text-magnolia-purple leading-tight">
+
           Explore Our Menu
         </h2>
         <div className="relative">
