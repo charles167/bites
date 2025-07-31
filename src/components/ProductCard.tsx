@@ -52,7 +52,7 @@ const ProductCard = ({
   return (
     <Card className="group hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border/50 relative overflow-hidden bg-gradient-card">
       {isPopular && (
-        <div className="absolute top-3 right-3 bg-magnolia-purple text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+        <div className="absolute top-3 right-3 bg-magnolia-green text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
           Popular
         </div>
       )}
@@ -70,10 +70,10 @@ const ProductCard = ({
       <CardContent className="p-6">
         <div className="space-y-3">
           <div className="flex items-start justify-between">
-            <h3 className="font-semibold text-lg text-magnolia-text group-hover:text-magnolia-purple transition-colors">
+            <h3 className="font-semibold text-lg text-magnolia-text group-hover:text-magnolia-green transition-colors">
               {name}
             </h3>
-            <div className="flex items-center space-x-1 text-amber-500">
+            <div className="flex items-center space-x-1 text-magnolia-yellow">
               <Star className="h-4 w-4 fill-current" />
               <span className="text-sm font-medium">{rating}</span>
             </div>
@@ -85,7 +85,7 @@ const ProductCard = ({
           
           <div className="flex items-center justify-between">
             <div className="space-y-1">
-              <p className="text-2xl font-bold text-magnolia-purple">{price}</p>
+              <p className="text-2xl font-bold text-magnolia-green">{price}</p>
               <p className="text-xs text-muted-foreground">{weight}</p>
             </div>
           </div>

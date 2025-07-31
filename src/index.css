@@ -8,52 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Magnolia-inspired color palette - clean whites and soft pastels */
-    --background: 0 0% 99%;
-    --foreground: 220 15% 15%;
+    /* Green and Yellow theme with cream body */
+    --background: 45 100% 96%; /* Cream background */
+    --foreground: 120 40% 25%; /* Dark green text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 15% 15%;
+    --card: 45 100% 98%; /* Light cream cards */
+    --card-foreground: 120 40% 25%; /* Dark green text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 15% 15%;
+    --popover: 45 100% 98%;
+    --popover-foreground: 120 40% 25%;
 
-    /* Soft purple primary like Magnolia */
-    --primary: 265 25% 35%;
-    --primary-foreground: 0 0% 98%;
+    /* Forest green primary */
+    --primary: 120 60% 35%;
+    --primary-foreground: 45 100% 98%;
 
-    /* Very light pink/cream secondary */
-    --secondary: 340 15% 97%;
-    --secondary-foreground: 220 15% 15%;
+    /* Light cream secondary */
+    --secondary: 45 60% 92%;
+    --secondary-foreground: 120 40% 25%;
 
-    /* Subtle muted tones */
-    --muted: 340 8% 96%;
-    --muted-foreground: 220 8% 45%;
+    /* Cream muted tones */
+    --muted: 45 40% 94%;
+    --muted-foreground: 120 20% 50%;
 
-    /* Soft pink accent */
-    --accent: 340 25% 85%;
-    --accent-foreground: 220 15% 15%;
+    /* Yellow accent */
+    --accent: 55 100% 65%;
+    --accent-foreground: 120 40% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 340 10% 92%;
-    --input: 340 10% 94%;
-    --ring: 265 25% 35%;
+    --border: 45 30% 88%;
+    --input: 45 40% 90%;
+    --ring: 120 60% 35%;
 
-    /* Custom Magnolia-style colors */
-    --magnolia-pink: 340 35% 90%;
-    --magnolia-purple: 265 25% 35%;
-    --magnolia-cream: 40 20% 97%;
-    --magnolia-text: 220 15% 25%;
+    /* Custom green/yellow/cream colors */
+    --magnolia-pink: 55 100% 85%; /* Yellow highlight */
+    --magnolia-purple: 120 60% 35%; /* Forest green */
+    --magnolia-cream: 45 100% 96%; /* Cream base */
+    --magnolia-text: 120 40% 25%; /* Dark green text */
     
-    /* Soft gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--magnolia-cream)), hsl(var(--magnolia-pink)));
+    /* Green/cream gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--magnolia-cream)), hsl(55 80% 88%));
     --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--magnolia-cream)));
     
-    /* Elegant shadows */
-    --shadow-elegant: 0 4px 25px -8px hsl(var(--magnolia-purple) / 0.15);
-    --shadow-card: 0 2px 15px -3px hsl(var(--magnolia-purple) / 0.1);
+    /* Green shadows */
+    --shadow-elegant: 0 4px 25px -8px hsl(120 60% 35% / 0.15);
+    --shadow-card: 0 2px 15px -3px hsl(120 60% 35% / 0.1);
     
     /* Smooth transitions */
     --transition-elegant: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

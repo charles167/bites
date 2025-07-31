@@ -66,9 +66,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom Magnolia-style colors
-				'magnolia-pink': 'hsl(var(--magnolia-pink))',
-				'magnolia-purple': 'hsl(var(--magnolia-purple))',
+				// Custom green/yellow/cream colors
+				'magnolia-yellow': 'hsl(var(--magnolia-pink))', /* Using pink variable for yellow */
+				'magnolia-green': 'hsl(var(--magnolia-purple))', /* Using purple variable for green */
 				'magnolia-cream': 'hsl(var(--magnolia-cream))',
 				'magnolia-text': 'hsl(var(--magnolia-text))',
 			},
