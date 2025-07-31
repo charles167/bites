@@ -3,33 +3,59 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/Pictures/Yellow 3D Coffee Product Feature Instagram Post (2).png",
-    title: "New! American Pancakes",
-    description:
-      "Fluffy and golden, our American pancakes are stacked high and served with love.",
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975130/delicious-donuts-ai-generated_fnvwmb.png",
+    title: "Delicious Donuts",
+    description: "Glazed, soft, and satisfying — the perfect sweet treat.",
   },
   {
-    image: "/Pictures/white-screen-display-mobile-phone-near-basket-full-baked-croissant-wooden-table.png",
-    title: "Crispy Chicken Sandwich",
-    description:
-      "Juicy chicken breast, perfectly seasoned, layered in a soft bun. A savory bite you won’t forget.",
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975130/front-view-packed-food-prepared-takeaway-_1_qsuyw6.png",
+    title: "Takeaway Packs",
+    description: "Prepared fresh and packed with care for every order.",
   },
   {
-    image: "/Pictures/piece-brown-rye-bread-presented-near-take-away-blank-bag-from-craft-paper-artisan-bakery-wooden-background.png",
-    title: "Vanilla Cake Loaf",
-    description:
-      "Soft, moist and fragrant vanilla loaf. The perfect pairing for tea time or dessert indulgence.",
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975128/closeup-yummy-chocolate-cookies-against-white-table_e5gnct.png",
+    title: "Chocolate Cookies",
+    description: "Rich, gooey, and freshly baked chocolatey goodness.",
   },
   {
-    image: "/Pictures/front-view-packed-food-prepared-takeaway-(1).png",
-    title: "Classic Belgian Waffles",
-    description:
-      "Crispy outside, fluffy inside — served with syrup and love.",
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975122/piece-brown-rye-bread-presented-near-take-away-blank-bag-from-craft-paper-artisan-bakery-wooden-background_gl8kot.png",
+    title: "Artisan Rye Bread",
+    description: "Crafted for health and flavor. Naturally satisfying.",
   },
- 
-  
-
-
+  {
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975121/55001980_10657902_iyfvdp.jpg",
+    title: "Rustic Bread Loaves",
+    description: "Traditional texture, rich in flavor and history.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753974967/23636885_m021t006_paper_food_box_mockup_02_zgvdob.png",
+    title: "Eco Food Packaging",
+    description: "Sustainable and smart. Our boxes care for your food & planet.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753974928/Yellow_z1i0mt.png",
+    title: "Lemon Pancakes",
+    description: "Bright, fluffy and zesty — sunshine on your plate.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753974894/Brown_3D_Illustration_Rice_Box_Packaging_Mockup_Instagram_Post_w6ku1w.png",
+    title: "Rice Box Special",
+    description: "Perfect for lunch on-the-go. Packed with nutrition & flavor.",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/dspkz3qiq/image/upload/v1753975130/delicious-donuts-ai-generated_fnvwmb.png",
+    title: "Back to Donuts",
+    description: "Because one bite is never enough.",
+  },
 ];
 
 const Hero = () => {
