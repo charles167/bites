@@ -1,153 +1,134 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { ChefHat, Heart, Star } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    image: "/Pictures/American pancakes - Copy.jpg",
+    image: "/Pictures/Yellow 3D Coffee Product Feature Instagram Post (2).png",
     title: "New! American Pancakes",
     description:
-      "Fluffy and golden, our American pancakes are stacked high and served with love. A morning favorite that feels like home.",
+      "Fluffy and golden, our American pancakes are stacked high and served with love.",
   },
   {
-    image: "/Pictures/chicken sandwich - Copy.jpg",
+    image: "/Pictures/white-screen-display-mobile-phone-near-basket-full-baked-croissant-wooden-table.png",
     title: "Crispy Chicken Sandwich",
     description:
       "Juicy chicken breast, perfectly seasoned, layered in a soft bun. A savory bite you won’t forget.",
   },
   {
-    image: "/Pictures/Vanilla cake loaf - Copy.jpg",
+    image: "/Pictures/piece-brown-rye-bread-presented-near-take-away-blank-bag-from-craft-paper-artisan-bakery-wooden-background.png",
     title: "Vanilla Cake Loaf",
     description:
       "Soft, moist and fragrant vanilla loaf. The perfect pairing for tea time or dessert indulgence.",
   },
-  // Add more items as needed
+  {
+    image: "/Pictures/front-view-packed-food-prepared-takeaway-(1).png",
+    title: "Classic Belgian Waffles",
+    description:
+      "Crispy outside, fluffy inside — served with syrup and love.",
+  },
+  {
+    image: "/Pictures/delicious-donuts-ai-generated.png",
+    title: "Blueberry Muffins",
+    description:
+      "Bursting with blueberries, these muffins are a sweet pick-me-up.",
+  },
+  {
+    image: "/Pictures/closeup-yummy-chocolate-cookies-against-white-table.png",
+    title: "Freshly Brewed Coffee",
+    description:
+      "Rich aroma, smooth finish — start your morning the right way.",
+  },
+  {
+    image: "/Pictures/Brown 3D Illustration Rice Box Packaging Mockup Instagram Post.png",
+    title: "Glazed Doughnuts",
+    description:
+      "Light, sweet, and irresistibly soft. A timeless favorite.",
+  },
+  {
+    image: "/Pictures/55001980_10657902.jpg",
+    title: "Garden Fresh Salad",
+    description:
+      "A vibrant mix of greens and goodness for a healthy bite.",
+  },
+  {
+    image: "/Pictures/23636885_m021t006_paper_food_box_mockup_02.png",
+    title: "Signature Gourmet Burger",
+    description:
+      "Grilled to perfection with premium ingredients. A bold bite.",
+  },
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () =>
-    setCurrentIndex((prev) => (prev + 1) % slides.length);
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-  const prevSlide = () =>
-    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+    );
+  };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000);
+    const interval = setInterval(nextSlide, 6000);
     return () => clearInterval(interval);
   }, []);
 
-  const currentSlide = slides[currentIndex];
-
   return (
-    <section className="min-h-[90vh] bg-[#FCEED8] flex items-center overflow-hidden">
-      <div className="container mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-        {/* LEFT TEXT BLOCK */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="space-y-6"
+    <div className="relative w-full h-[550px] overflow-hidden rounded-2xl shadow-lg">
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
         >
-          <div className="flex items-center space-x-2 text-magnolia-purple">
-            <ChefHat className="h-6 w-6" />
-            <span className="text-sm font-medium uppercase tracking-wide">
-              Fresh • Handmade • Daily
-            </span>
-          </div>
-
-          <h1 className="text-5xl sm:text-6xl font-extrabold text-[#3E1C00] leading-tight">
-            {currentSlide.title}
-          </h1>
-
-          <p className="text-lg text-[#5A3B1F] max-w-xl">
-            {currentSlide.description}
-          </p>
-
-          <div className="flex gap-4 flex-wrap">
-            <Button
-              variant="magnolia"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() =>
-                document
-                  .querySelector("#menu")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              View Our Menu
-            </Button>
-            <Button
-              variant="order"
-              size="lg"
-              className="text-lg px-8"
-              onClick={() =>
-                window.open(
-                  "https://wa.me/2349136034654?text=Hello! I would like to place an order from Reign Bites",
-                  "_blank"
-                )
-              }
-            >
-              Order Now
-            </Button>
-          </div>
-
-          {/* Review & Love Tag */}
-          <div className="flex items-center flex-wrap gap-6 pt-4">
-            <div className="flex items-center space-x-2 text-primary">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-current" />
-              ))}
-              <span className="ml-2 text-sm font-medium">5.0 (120+ reviews)</span>
-            </div>
-            <div className="flex items-center space-x-2 text-muted-foreground">
-              <Heart className="w-4 h-4" />
-              <span className="text-sm">Made with love since 2020</span>
-            </div>
-          </div>
-
-          {/* Dots */}
-          <div className="flex space-x-2 pt-4">
-            {slides.map((_, i) => (
-              <div
-                key={i}
-                className={`w-3 h-3 rounded-full transition ${
-                  i === currentIndex ? "bg-[#3E1C00]" : "bg-gray-300"
-                }`}
-              />
-            ))}
-          </div>
-        </motion.div>
-
-        {/* RIGHT IMAGE BLOCK */}
-        <div className="relative w-full h-[500px]">
           <img
-            src={currentSlide.image}
-            alt={currentSlide.title}
-            className="w-full h-full object-cover rounded-3xl shadow-2xl transition duration-700"
+            src={slide.image}
+            alt={slide.title}
+            className="w-full h-full object-cover"
           />
-
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-black/10 rounded-3xl" />
-
-          {/* Nav arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/70 text-black rounded-full p-2 z-10 hover:bg-white"
-          >
-            ‹
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/70 text-black rounded-full p-2 z-10 hover:bg-white"
-          >
-            ›
-          </button>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent flex items-center">
+            <div className="max-w-xl ml-12 p-6 bg-white/90 rounded-r-2xl shadow-lg">
+              <h2 className="text-4xl font-bold text-gray-900 mb-2">
+                {slide.title}
+              </h2>
+              <p className="text-lg text-gray-700">{slide.description}</p>
+            </div>
+          </div>
         </div>
+      ))}
+
+      {/* Navigation Buttons */}
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow"
+      >
+        <ChevronLeft />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow"
+      >
+        <ChevronRight />
+      </button>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full ${
+              index === currentIndex ? "bg-white" : "bg-white/50"
+            }`}
+          />
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
